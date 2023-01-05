@@ -1,7 +1,7 @@
 # Clinical_notes
 Training a model to perform Named Entity Recognition on clinical notes
 
-## Task: 
+## Task
 Extract information from clinical notes.
 
 ## Data
@@ -13,7 +13,7 @@ Entities = ['age', 'name', 'disease', 'treatment', 'biomarker', 'laterality']
 
 ## Discussion
 
-###Step 1. Annotate the data
+### Step 1. Annotate the data
 In order to bootstrap the annotation, we can pre-annotate using spacy.EntityRuler and  concise-concepts. Then the pre-annotated texts can be uploaded to Argilla for revision and to manually improve the annotation. Once all the clinical notes have been annotated, we have a good starting point to start training the model to perform Named Entity Recognition. 
 We can also use keyword extraction models like https://github.com/MaartenGr/KeyBERT and https://huggingface.co/ml6team/keyphrase-extraction-kbir-inspec
 
